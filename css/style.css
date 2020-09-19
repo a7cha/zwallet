@@ -9,6 +9,20 @@
     color: hsl(218, 6%, 24%);
 }
 
+@media screen and (max-width: 425px) {
+    .login-font{
+        font-family: 'Nunito Sans', sans-serif;
+        font-family: Nunito Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 17pt;
+            line-height: 33px;
+    
+        color: hsl(218, 6%, 24%);
+    }
+}
+
+
 #phone-font{
     position: absolute;
     left: 10.42%;
@@ -76,6 +90,17 @@
     bottom: 75.65%;
 }
 
+@media screen and (max-width: 425px) {
+    .login-font-pos{
+        position: relative;
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+        top: 2em;
+        bottom: 75.65%;
+    }
+    
+}
+
 .login-font-par{
     position: absolute;
     left: 1.51%;
@@ -92,6 +117,26 @@
     
     
     color: rgba(58, 61, 66, 0.6);    
+}
+
+@media screen and (max-width: 425px) {
+    .login-font-par{
+        position: relative;
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+        top: 4em;
+        bottom: 63.16%;
+        
+        font-family: Nunito Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12pt;
+        line-height: 30px;
+        /* or 187% */
+        
+        
+        color: rgba(58, 61, 66, 0.6);    
+    }
 }
 
 #phone-1{
@@ -119,6 +164,17 @@
     top: 410px;
 }
 
+@media screen and (max-width: 425px) {
+    #form-pos{
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+        position: relative;
+        width: 23em;
+        height: 500.28px;
+        top: 7em;
+    }
+}
+
 input{
     border: none;
     width: 100%;
@@ -140,8 +196,16 @@ input[type=password]{
 
 #forgot-password{
     position: relative;
-    margin-left: 70%;
+    margin-left: 17em;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 425px) {
+    #forgot-password{
+        position: relative;
+        margin-left: 15em;
+        margin-bottom: 10px;
+    
 }
 
 .myButton{
@@ -150,5 +214,8 @@ input[type=password]{
 }
 
 .signUp{
-    margin-top: 100px !important;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
