@@ -260,8 +260,7 @@ input[type=password]{
     
     right : 20em;
     top: 51%;
-    
-    
+
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
@@ -285,9 +284,7 @@ input[type=password]{
     font-size: 18px;
     line-height: 31px;
     /* identical to box height, or 172% */
-    
-    
-    
+        
     color: #3A3D42;
 }
 
@@ -300,4 +297,19 @@ input[type=password]{
     
     background-blend-mode: normal;
     border-radius: 10px;
+}
+
+
+aside{
+    position: absolute;
+    left: 10.42%;
+    right: 70.83%;
+    top: 18.73%;
+    bottom: 10.72%;
+    
+    /* Zwallet/White */
+    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
 }
