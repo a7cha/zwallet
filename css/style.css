@@ -72,7 +72,7 @@
     position: absolute;
     left: 1%;
     right: 40.82%;
-    top: 12.59%;
+    top: 15%;
     bottom: 75.65%;
 }
 
@@ -80,7 +80,7 @@
     position: absolute;
     left: 1.51%;
     right: 35%;
-    top: 27.47%;
+    top: 28.47%;
     bottom: 63.16%;
     
     font-family: Nunito Sans;
@@ -113,15 +113,42 @@
 }
 
 #form-pos{
-    position: absolute;
+    position: relative;
     width: 410.51px;
     height: 500.28px;
-    top: 400.05px;
+    top: 410px;
 }
 
 input{
     border: none;
-    
-    border-bottom: 2px solid black;
-  }
-  
+    width: 100%;
+    border-bottom: 2px solid rgba(169, 169, 169, 0.6);
+    padding-bottom: 0.5em;
+}
+
+input[type=email]{
+    background: url(../components/mail.svg) no-repeat  5px 1px;
+    padding-left: 45px;
+
+}
+
+input[type=password]{
+    background: url(../components/lock.svg) no-repeat  5px 1px;
+    padding-left: 45px;
+
+}
+
+#forgot-password{
+    position: relative;
+    margin-left: 70%;
+    margin-bottom: 10px;
+}
+
+.myButton{
+    display: block;
+    width: 100%;
+}
+
+.signUp{
+    margin-top: 100px !important;
+}
