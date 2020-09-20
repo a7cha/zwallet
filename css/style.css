@@ -1,3 +1,17 @@
+:root {
+    --color-primary: #6379f4;
+    --color-secondary: #fafcff;
+    --color-dark: #3a3d42;
+    --color-white: #ffffff;
+    --color-danger: #ff5b37;
+  }
+
+.money-balance{
+    position: static;
+    background-color:  #6379F4 !important;
+    height: 30%;
+}
+
 .login-font{
     font-family: 'Nunito Sans', sans-serif;
     font-family: Nunito Sans;
@@ -62,12 +76,8 @@
 }
 
 #zwallet-icon{
-    position: absolute;
-    left: 10.42%;
-    right: 82.78%;
-    top: 5.2%;
-    bottom: 90.63%;
-    
+    position: relative;
+    top: 100px;
     font-family: 'Nunito Sans', sans-serif;
     font-family: Nunito Sans;
     font-style: normal;
@@ -76,9 +86,7 @@
     line-height: 40px;
     /* identical to box height */
     
-    
     /* Zwallet/White */
-    
     color: #FFFFFF;
 }
 
@@ -239,11 +247,11 @@ input[type=password]{
 .myNav{
     background-color: rgb(255,255,255,1);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-    border-radius: 25px;
+    border-radius: 0 0 25px 25px
 }
 
 #nav-pic{
-    position: absolute;
+    
     left: 71.25%;
     right: 25.14%;
     top: 30.58%;
@@ -256,11 +264,6 @@ input[type=password]{
 
 
 #profile-number{
-    position: absolute;
-    
-    right : 20em;
-    top: 51%;
-
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
@@ -273,11 +276,6 @@ input[type=password]{
 }
 
 #profile-name{
-    position: relative;
-    
-    right : 1em;
-    top: 51%;
-
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: bold;
@@ -292,20 +290,15 @@ input[type=password]{
     position: relative;
     margin-right: 50px;
     
-    top: 10.58%;
-    bottom: 90.01%;
-    
     background-blend-mode: normal;
     border-radius: 10px;
 }
 
 
 aside{
-    position: relative;
     padding-left: 1em;
     padding-right: 4em;
-    margin-top: 40px;
-    padding-bottom: 17.5em;
+    margin-top: 1em;
     
     /* Zwallet/White */
     
@@ -325,10 +318,10 @@ aside{
 }
 
 footer{
-position: absolute;
+
 width: 100%;
 height: 68px;
-margin-top: 40px;
+margin-top: 3em;
 
 
 /* Zwallet/Primary */
@@ -338,7 +331,6 @@ background: #6379F4;
 
 
 .footer-font{
-    margin-top: 13px;
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
@@ -351,21 +343,13 @@ background: #6379F4;
     
 }
 
-.btn-sidebar{
-    border: red;
+.parent {
+    display: grid;
+    grid-template-rows: 5px 5px;
 }
 
-.money-balance{
-    position: absolute;
-    width: 95%;
-    height: 11em;
-    margin-top: 20px;
-    
-    
-    /* Zwallet/Primary */
-    
-    background: #6379F4;
-    border-radius: 20px;
+.rounded-14{
+    border-radius: 14px;
 }
 
 .balance-text{
@@ -375,8 +359,6 @@ background: #6379F4;
     font-size: 12pt;
     line-height: 31px;
     /* identical to box height, or 172% */
-    
-    
     color: #E0E0E0;
 }
 
@@ -388,8 +370,6 @@ background: #6379F4;
     font-size: 9pt;
     line-height: 31px;
     /* identical to box height, or 172% */
-    
-    
     color: #E0E0E0;
 }
 
@@ -427,16 +407,17 @@ background: #6379F4;
 }
 
 .button-balance-pos{
-    position: absolute;
-    top: 1em;
-    left: 38em;
+    
+    
+    
+    left: 1098px;
+    bottom: 2010px;
 }
 
 .diagram{
-    position: absolute;
-    width: 32em;
-    height: 24.5em;
-    margin-top: 14em;
+
+    width: 29.5em;
+    height: 28.5em;
     
     
     /* Zwallet/White */
@@ -447,14 +428,124 @@ background: #6379F4;
 }
 
 .history-balance{
-    position: absolute;
-    width: 17.5em;
-    height: 24.5em;
-    right: 3%;
-    margin-top: 225px;
+    
+    width: 20.5em;
+    height: 28.5em;
+    margin-right: 200px !important;
+    
     
     
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 25px;
+}
+#transaction-history-big{
+
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    
+    
+    /* Zwallet/Dark */
+    
+    color: #3A3D42;
+}
+
+#see-all{
+    position: relative;
+    margin-top: 18px;
+    margin-right: 1.5em;
+
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    
+    /* Zwallet/Primary */
+    
+    color: #6379F4;
+}
+
+#profile-name{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 31px;
+    /* identical to box height, or 172% */
+    
+    text-align: center;
+    
+    color: #3A3D42;
+}
+
+#profile-number{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    /* identical to box height, or 185% */
+    
+    
+    color: rgba(58, 61, 66, 0.9);
+}
+
+.border-20{
+    border-radius: 20px;
+}
+
+.transaction-history{
+    position: static;
+    background-color: #FFFFFF !important;
+    height: 100%;
+}
+
+.panel-list{
+    height: 6.5em;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.name-history{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    color: #4D4B57;
+}
+
+.status-history{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    
+    color: #7A7886;    
+}
+
+.value-history-add{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    text-align: right;
+    
+    color: #1EC15F;
 }

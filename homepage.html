@@ -8,71 +8,144 @@
     <link rel="stylesheet" href="css/style.css" >
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <!-- Font Bold -->
+    
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body style="background-color: black">
+<body style="background-color:  #E5E5E5;">
 
     <nav class="navbar myNav navbar-dark">
         <div class="container">
-            <h2 class="mt-4 mb-4" id="zwallet-icon-blue">Zwallet</h2>
-            <div class="d-flex flex-row">
-                <img id="profile-picture" src="components/profile1.png" alt="">
-                <p id="profile-name">Robert Chandler</p>
-                <p id="profile-number">+62 8139 3877 7946</p>
-                <img class="ml-1" src="components/bell.svg" alt="">
+            <div class="d-flex justify-content-start">
+                <h2 class="mt-3 mb-3 ml-3" id="zwallet-icon-blue">Zwallet</h2>
+            </div>
+            <div class="d-flex justify-content-end">   
+                <img src="components/profile1.svg"">
+                <div class="d-flex flex-column mr-3">                   
+                    <span id="profile-name" class="ml-3 mt-1">Robert Chandler</span>
+                    <small id="profile-number" class="ml-3 mb-1">+62 8139 3877 7946</small>                  
+                </div>
+                <img  src="components/bell.svg" alt="">
             </div>
         </div>
     </nav>
     
     <div class="container">
         <div class="row">
+
             <div class="col-3">
                 <div class="d-flex align-items-start flex-column">
-                    <aside>
-                        <div class="d-flex flex-column" >
-                            <div class="pt-4 m-3"><img class="mr-4" src="/components/grid.png" alt="">Dasboard</div>
-                            <div class="pt-1 m-3"><img class="mr-4" src="/components/arrow-up.png" alt="">Transfer</div>
-                            <div class="pt-1 m-3"><img class="mr-4" src="/components/plus.png" alt="">Top Up</div>
-                            <div class="pt-1 m-3"><img class="mr-4" src="/components/user.png" alt="">Profile</div>
+                    <aside class=" d-lg-block d-none">
+                        <div class="d-flex flex-column ">
+                            <div>
+                                <div class="pt-4 m-3"><img class="mr-4" src="/components/grid.png" alt="">Dasboard</div>
+                                <div class="pt-1 m-3"><img class="mr-4" src="/components/arrow-up.png" alt="">Transfer</div>
+                                <div class="pt-1 m-3"><img class="mr-4" src="/components/plus.png" alt="">Top Up</div>
+                                <div class="pt-1 m-3"><img class="mr-4" src="/components/user.png" alt="">Profile</div>            
+                            </div>
+                            <div style="margin-top: 380px;">
+                                <div class="pt-1 m-3 align-content-end"><img class="mr-4" src="/components/user.png" alt="">Log out</div>
+                            </div>
                         </div>
                     </aside>
                 </div>
-            </div>    
+            </div>
+
             <div class="col-9 mt-4">
-                <div class="money-balance">
-                    <div class="d-flex align-items-start flex-column bd-highlight mt-4 pl-4">
-                        <div class="pl-1 bd-highlight balance-text">Balanced</div>
-                        <div class="p-1  bd-highlight balance-value">Rp120.000</div>
-                        <div class="pl-1  bd-highlight balance-number">+62 813-9387-7946</div>
+                <div class="money-balance border-20">
+                    <div class="container">
+                        <p class="balance-text pt-4 mb-auto">Balanced</p>
+                        <p class="balance-value">Rp120.000</p>
+                        <p class="balance-number pb-5">+62 813-9387-7946</p>
                     </div>
-                    <div class="d-flex align-items-end flex-column bd-highlight button-balance-pos">
-                        <div class="p-2 bd-highlight"><button class="button-balance ">
-                            <img class="mr-1" src="/components/arrow-up-grey.png" alt="">
-                            <span class="mt-1 mr-3">Transfer</<span></button>
+                </div>
+                <div class="row">
+                    <div class="col-7">
+                        <div class="diagram">
+                            <h1>Hello world</h1>
                         </div>
-                        <div class="p-2 bd-highlight"><button class="button-balance ">
-                            <img class="mr-1" src="/components/plus-grey.png" alt="">
-                            <span class="mt-1 mr-3">Top Up</span></button></div>
                     </div>
+                    <div class="col-4">
+                        <div class="history-balance">
+                            <div class="d-flex bd-highlight mr-1 ml-1 p-3">
+                                <p class="mr-auto  bd-highlight">Transaction History</p>
+                                <p class=" bd-highlight"><a href="transaction-history.html">See all</a></p>
+                            </div>
+
+                            <div class="d-flex flex-column bd-highlight mb-5">
+                                <div class="pl-4 bd-highlight mt-b">
+                                    <div class="d-flex justify-content-start">
+                                        <img src="components/profile1.svg" alt="">
+                                        <div class="ml-3 mt-2">
+                                        <div class="name-history">Arungi Cahaya</div>
+                                        <div class="status-history">Transfer</div>
+                                
+                                        </div>
+                                        <div class="value-history-add ml-4 mt-3">+Rp50.000</div>
+                                    </div>
+                                </div>
+                            </div>                           
+
+                            <div class="d-flex flex-column bd-highlight mb-5">
+                                <div class="pl-4 bd-highlight mt-b">
+                                    <div class="d-flex justify-content-start">
+                                        <img src="components/profile1.svg" alt="">
+                                        <div class="ml-3 mt-2">
+                                        <div class="name-history">Arungi Cahaya</div>
+                                        <div class="status-history">Transfer</div>
+                                
+                                        </div>
+                                        <div class="value-history-add ml-4 mt-3">+Rp50.000</div>
+                                    </div>
+                                </div>
+                            </div>   
+
+                            <div class="d-flex flex-column bd-highlight mb-5">
+                                <div class="pl-4 bd-highlight mt-b">
+                                    <div class="d-flex justify-content-start">
+                                        <img src="components/profile1.svg" alt="">
+                                        <div class="ml-3 mt-2">
+                                        <div class="name-history">Arungi Cahaya</div>
+                                        <div class="status-history">Transfer</div>
+                                
+                                        </div>
+                                        <div class="value-history-add ml-4 mt-3">+Rp50.000</div>
+                                    </div>
+                                </div>
+                            </div>   
+
+                            <div class="d-flex flex-column bd-highlight mb-5">
+                                <div class="pl-4 bd-highlight mt-b">
+                                    <div class="d-flex justify-content-start">
+                                        <img src="components/profile1.svg" alt="">
+                                        <div class="ml-3 mt-2">
+                                        <div class="name-history">Arungi Cahaya</div>
+                                        <div class="status-history">Transfer</div>
+                                
+                                        </div>
+                                        <div class="value-history-add ml-4 mt-3">+Rp50.000</div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>                        
                 </div>
-                <div class="diagram">
-                    <h1 class="text-white">Hello World</h1>
-                </div>
-                <div class="history-balance">
-                    <h1 class="text-white">Hello WOrld</h1>
-                </div>
+
             </div>
         </div>
     </div>
+
+
+
+
       
 
 
     <footer>
         <div class="container">
-            <div class="d-flex footer-font">
-                <div class="mr-auto p-2">2020 Zwallet. All right reserved.</div>
-                <div class="p-2">+62 5637 8882 9901</div>
-                <div class="p-2">contact@zwallet.com</div>
+            <div class="d-flex footer-font mt-5">
+                <div class="mr-auto p-2 mt-3">2020 Zwallet. All right reserved.</div>
+                <div class="p-2 mt-3">+62 5637 8882 9901</div>
+                <div class="p-2 mt-3">contact@zwallet.com</div>
               </div>
         </div>
     </footer>
