@@ -514,6 +514,12 @@ background: #6379F4;
     border-radius: 10px;
 }
 
+.panel-list-confirm{
+    height: 4.5em;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
 .name-history{
     font-family: Nunito Sans;
     font-style: normal;
