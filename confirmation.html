@@ -34,16 +34,69 @@
             <div class="col-3">
                 <div class="d-flex align-items-start flex-column">
                     <aside>
-                        <div class="d-flex flex-column ">
+                        <div class="d-flex flex-column">
                             <div>
-                                <div class="pt-4 m-3"><img class="mr-4" src="/components/grid.png" alt="">Dasboard</div>
-                                <div class="pt-1 m-3"><img class="mr-4" src="/components/arrow-up.png" alt="">Transfer</div>
-                                <div class="pt-1 m-3"><img class="mr-4" src="/components/plus.png" alt="">Top Up</div>
-                                <div class="pt-1 m-3"><img class="mr-4" src="/components/user.png" alt="">Profile</div>            
+                                
+                                <div class="d-flex justify-content-start">
+                                    <div class="d-flex flex-row bd-highlight mt-4">
+                                        <a class="text-decoration-none" href="homepage.html">
+                                            <div class="m-3 ml-4 navbar-non ">
+                                                <img class="mr-3" src="components/grid.svg" alt="">
+                                                Dasboard
+                                            </div>
+                                            </a>  
+                                      </div>
+                                </div>
+
+                                <div class="d-flex justify-content-start">
+                                    <div class="d-flex flex-row bd-highlight mb-1">
+                                        <a class="text-decoration-none" href="homepage.html">
+                                            <div class="m-3 navbar-active">
+                                                <img style="right: 32px; position: relative;" src="components/rectangel.png" alt="">
+                                                <img class="mr-3" src="components/arrow-up (1).png" alt="">
+                                                Transfer
+                                            </div>
+                                            </a>  
+                                      </div>
+                                </div>
+
+                                <div class="d-flex justify-content-start">
+                                    <div class="d-flex flex-row bd-highlight mb-1">
+                                        <a class="text-decoration-none" href="homepage.html">
+                                            <div class="m-3 ml-4 navbar-non ">
+                                                <img class="mr-3" src="components/plus.png" alt="">
+                                                Top Up
+                                            </div>
+                                            </a>  
+                                      </div>
+                                </div>
+
+                                <div class="d-flex justify-content-start">
+                                    <div class="d-flex flex-row bd-highlight mb-1">
+                                        <a class="text-decoration-none" href="homepage.html">
+                                            <div class="m-3 ml-4 navbar-non ">
+                                                <img class="mr-3" src="components/user.png" alt="">
+                                                Profile
+                                            </div>
+                                            </a>  
+                                      </div>
+                                </div>
+
+                                
+
                             </div>
-                            <div style="margin-top: 330px;">
-                                <div class="pt-1 m-3 align-content-end"><img class="mr-4" src="/components/user.png" alt="">Log out</div>
+
+                            <div style="margin-top: 330px;" class="navbar-non">
+                                <div class="d-flex flex-row bd-highlight mb-1">
+                                    <a class="text-decoration-none" href="homepage.html">
+                                        <div class="m-3 ml-4 navbar-non ">
+                                            <img class="mr-3" src="components/log-out.png" alt="">
+                                            Log Out
+                                        </div>
+                                        </a>  
+                                  </div>
                             </div>
+
                         </div>
                     </aside>
                 </div>
@@ -72,7 +125,7 @@
                                     </div>   
                                 </div>
 
-                                <p  class="mt-4 " id="transaction-history-big">Transfer To</p>
+                                <p  class="mt-4 " id="transaction-history-big">Details</p>
 
                                 <div class="panel-list-confirm mb-2">
                                     <div class="d-flex flex-column bd-highlight pt-2">
@@ -80,8 +133,8 @@
                                             <div class="d-flex justify-content-start">
                                                 
                                                 <div class="ml-3 mt-2">
-                                                <div class="name-history">Arungi Cahaya</div>
-                                                <div class="status-history">Transfer</div>
+                                                <div class="label-confirmation">Amount</div>
+                                                <div class="value-confirmation">Rp100.000</div>
                                                 </div>
                                             </div>
                                         </div>   
@@ -94,8 +147,8 @@
                                             <div class="d-flex justify-content-start">
                                                 
                                                 <div class="ml-3 mt-2">
-                                                <div class="name-history">Arungi Cahaya</div>
-                                                <div class="status-history">Transfer</div>
+                                                <div class="label-confirmation">Balance Left</div>
+                                                <div class="value-confirmation">Rp20.000</div>
                                                 </div>
                                             </div>
                                         </div>   
@@ -108,8 +161,8 @@
                                             <div class="d-flex justify-content-start">
                                                 
                                                 <div class="ml-3 mt-2">
-                                                <div class="name-history">Arungi Cahaya</div>
-                                                <div class="status-history">Transfer</div>
+                                                <div class="label-confirmation">Date & Time</div>
+                                                <div class="value-confirmation">May 11, 2020 - 12.20</div>
                                                 </div>
                                             </div>
                                         </div>   
@@ -122,8 +175,8 @@
                                             <div class="d-flex justify-content-start">
                                                 
                                                 <div class="ml-3 mt-2">
-                                                <div class="name-history">Arungi Cahaya</div>
-                                                <div class="status-history">Transfer</div>
+                                                <div class="label-confirmation">Notes</div>
+                                                <div class="value-confirmation">For buying some socks</div>
                                                 </div>
                                             </div>
                                         </div>   
@@ -138,25 +191,7 @@
                               </button>
                               
                               <!-- Modal -->
-                              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                      </button>
-                                    </div>
-                                    <div class="modal-body">
-                                      ...
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                      <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+
                         </div>
                         
                     </div>
@@ -164,12 +199,41 @@
                 </div>
              </div>
         </div>
+
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div style="border-radius: 1rem; width: 90% !important; " class="modal-content  border-white">
+                <div class="modal-header border-0">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Enter PIN to Transfer</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body ">
+                    Enter your 6 digits PIN for confirmation to continue transferring money. 
+                    <div class="d-flex justify-content-between mx-5">
+                        <input type="text" class="pincode" maxlength="1"/>
+                        <input type="text" class="pincode" maxlength="1"/>
+                        <input type="text" class="pincode" maxlength="1"/>
+                        <input type="text" class="pincode" maxlength="1"/>
+                        <input type="text" class="pincode" maxlength="1"/>
+                        <input type="text" class="pincode" maxlength="1"/>
+                        
+                    </div>
+
+                    
+                </div>
+                <div class="modal-footer">
+                  
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
     </div>
 
 
-
-
-      
 
 
     <footer>
@@ -181,6 +245,7 @@
               </div>
         </div>
     </footer>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
