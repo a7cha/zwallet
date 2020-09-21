@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/style.css" >
     <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="style1.css" >
     <!-- Font Bold -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -186,8 +187,9 @@
                     </div>
                     <div class="d-flex justify-content-end">
                         <div class="d-flex flex-row bd-highlight pr-3 mb-3">
+                            
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                                Launch demo modal
+                                Continue
                               </button>
                               
                               <!-- Modal -->
@@ -209,15 +211,30 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body ">
+                <div class="modal-body mx-5">
                     Enter your 6 digits PIN for confirmation to continue transferring money. 
-                    <div class="d-flex justify-content-between mx-5">
-                        <input type="text" class="pincode" maxlength="1"/>
-                        <input type="text" class="pincode" maxlength="1"/>
-                        <input type="text" class="pincode" maxlength="1"/>
-                        <input type="text" class="pincode" maxlength="1"/>
-                        <input type="text" class="pincode" maxlength="1"/>
-                        <input type="text" class="pincode" maxlength="1"/>
+                    <div class="d-flex justify-content-between mt-5">
+
+                        <input id="txt1" type="text" class="pincode" maxlength="1" 
+                         onkeyup="numOnly(this) ;autoTab(this,'txt2')"/>
+                         
+                         <input id="txt2" type="text" class="pincode" maxlength="1" 
+                         onkeyup="numOnly(this);autoTab(this,'txt3')"/>
+
+                         <input id="txt3" type="text" class="pincode" maxlength="1" 
+                         onkeyup="numOnly(this);autoTab(this,'txt4')"/>
+
+                         <input id="txt4" type="text" class="pincode" maxlength="1" 
+                         onkeyup="numOnly(this);autoTab(this,'txt5')"/>
+
+                         <input id="txt5" type="text" class="pincode" maxlength="1" 
+                         onkeyup="numOnly(this);autoTab(this,'txt6')"/>
+
+                         <input id="txt6" type="text" class="pincode" maxlength="1" 
+                         onkeyup="numOnly(this)"/>
+                        
+                        <!-- <input name="pincode" type="text" class="pincode" maxlength="1"/> -->
+                        
                         
                     </div>
 
@@ -225,7 +242,7 @@
                 </div>
                 <div class="modal-footer">
                   
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <a href="success.html"><button type="button" class="btn btn-primary">Save changes</button></a> 
                 </div>
               </div>
             </div>
@@ -246,7 +263,23 @@
         </div>
     </footer>
 
+    <script>
+        function numOnly(input){
+            if (/\D/g.test(input.value)) 
+            input.value = input.value.replace(/\D/g,'')
+            };
 
+        function autoTab(fromTextBox, toTextBox){
+            var length =fromTextBox.value.length;
+            var maxLength =fromTextBox.getAttribute("maxLength");
+
+            if (length == maxLength){
+                document.getElementById(toTextBox).focus()
+            }
+        }
+    </script>
+
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
