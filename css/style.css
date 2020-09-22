@@ -183,22 +183,45 @@
     }
 }
 
-input{
+.search-input{
+    border-radius: 15px; 
+    
+    width: 100%;
+    background-color: rgba(58, 61, 66, 0.1);
+    padding-bottom: 0.5em;
+    
+}
+
+#input-login{
     border: none;
     width: 100%;
-    border-bottom: 2px solid rgba(169, 169, 169, 0.6);
-    padding-bottom: 0.5em;
+    background-color: rgba(58, 61, 66, 0.1);
+    
 }
+
+
+#search-icon{
+    background: url(../components/search.svg) no-repeat  5px 1px;
+    padding-left: 45px;
+}
+
 
 input[type=email]{
     background: url(../components/mail.svg) no-repeat  5px 1px;
     padding-left: 45px;
-
+    border: none;
+    width: 100%;
+    background-color: rgba(58, 61, 66, 0.1);
+    padding-bottom: 0.5em;
 }
 
 input[type=password]{
     background: url(../components/lock.svg) no-repeat  5px 1px;
     padding-left: 45px;
+    border: none;
+    width: 100%;
+    background-color: rgba(58, 61, 66, 0.1);
+    padding-bottom: 0.5em;
 
 }
 
