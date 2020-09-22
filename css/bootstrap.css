@@ -7470,7 +7470,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .flex-md-row {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
@@ -8900,7 +8900,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .m-md-0 {
     margin: 0 !important;
   }
@@ -9245,7 +9245,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .m-lg-0 {
     margin: 0 !important;
   }
@@ -9590,7 +9590,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   .m-xl-0 {
     margin: 0 !important;
   }
