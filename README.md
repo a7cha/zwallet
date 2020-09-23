@@ -10,7 +10,7 @@
 
 
 ### # ABOUT THIS PROJECT
-Hello my name is Arungi Cahaya, Im from Arkademy Bootcamp, Im Fullstack Developer Mobile Batch 18.
+Hello my name is Arungi Cahaya, im from Arkademy Bootcamp, im Fullstack Developer Mobile Batch 18.
 
 Purpose of this project solve banking problems that oftenly wasting much of your times.
 
