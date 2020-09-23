@@ -140,7 +140,7 @@ Chart.elements.Rectangle.prototype.draw = function () {
     datasets: [
       {
         label: "Dataset 1",
-        backgroundColor: "#6379F4",
+        backgroundColor: ["#6379F4","#6379F4","#9DA6B5","#9DA6B5","#9DA6B5","#6379F4","#9DA6B5"],
         borderColor: "#fff",
         data: [9, 4, 5, 7, 4, 8, 6],
       },

@@ -102,7 +102,7 @@
                 </div>
             </div>
 
-            <div class="col-9 col-md-12 mt-4">
+            <div class="col-xl-9 col-md-12 mt-4">
                 <div class="transaction-history border-20">
                     <div class="container">
                         <div class="d-flex align-items-start flex-column bd-highlight mb-3" >
@@ -129,7 +129,7 @@
                                 <p class=" " class="amount">press continue to the next steps. </p>
                                 <div class="d-flex justify-content-center align-items-center ">
                                     <div class="d-flex flex-column bd-highlight mt-5  mb-5">
-                                        <input class="money-input" type="text" name="" id="" placeholder="0.00">
+                                        <input  onchange="toRupiah(this)" class="money-input" type="text" name="" id="" placeholder="0.00" maxlength="7">
                                         <div class="money-value p-2 mx-auto bd-highlight">Rp120.000 Available</div>
                                         <input class="note-transfer mt-4" type="text" placeholder="Add Some Notes" />
                                       </div>
@@ -156,17 +156,58 @@
 
 
 
+    <div class="nav d-xl-none">
 
-    <footer>
+        <a href="homepage.html" class="nav__link">
+          <img src="components/grid.svg" alt="">
+          <span class="navbar-non-res" >Dashboard</span>
+        </a>
+
+        <a href="search-receiver.html" class="nav__link ">
+          <img src="components/arrow-up (1).png" alt="">
+          <span class="navbar-active-res">Transfer</span>
+        </a>
+
+        <a href="topup.html" class="nav__link">
+          <img src="components/plus.png" alt="">
+          <span class="navbar-non-res">Top up</span>
+        </a>
+        
+        <a href="#" class="nav__link">
+          <img src="components/user.png" alt="">
+          <span class="navbar-non-res">profile </span>
+        </a>
+        
+        <a href="#" class="nav__link">
+          <img src="components/log-out.png" alt="">
+          <span class="navbar-non-res">Log Out</span>
+        </a>
+    
+      </div>
+
+
+
+      <footer>
         <div class="container">
             <div class="d-flex footer-font mt-5">
-                <div class="mr-auto p-2 mt-3">2020 Zwallet. All right reserved.</div>
-                <div class="p-2 mt-3">+62 5637 8882 9901</div>
-                <div class="p-2 mt-3">contact@zwallet.com</div>
-              </div>
+                <div class="mr-auto p-2 mt-2">2020 Zwallet. All right reserved.</div>
+                <div class="p-2 mt-2">+62 5637 8882 9901</div>
+                <div class="p-2 mt-2">contact@zwallet.com</div>
+            </div>
         </div>
     </footer>
 
+    <script>
+        const toRupiah = (e) => {
+            const number = parseInt(e.value)
+            if(number) {
+                const currency = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR'}).format(number)
+                e.value = currency
+            } else {
+                e.value = ''
+            }
+        }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

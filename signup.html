@@ -42,18 +42,18 @@
 
                                 <input type="email" class="input-login mt-5" name="" id="" placeholder="Enter your e-mail"/>
 
-                                <div class="form-group">
+                                
                                     <div>
                                         <input  id="myInput" type="password" name="password" class="input-login-password mt-5" name="" id="" placeholder="Enter your Password"/>
                                         <span onclick="myFunction()"><img src="components/eye-crossed.svg" alt=""></span>
                                     </div>
                                     <p id="forgot-password" class="text-right mt-3 mb-5">Forgot Password ?</p>
-                                </div>
+                                
 
                                 <a href="pincode.html"><button class="login-button">Signup</button> </a>
 
                                 <div class="d-flex justify-content-center mt-5">
-                                    <p class="login-font-par">Already Have an account? Let's <a class="text-decoration-none" href="signup.html">Login</a></p>
+                                    <p class="login-font-par">Already Have an account? Let's <a class="text-decoration-none" href="login.html">Login</a></p>
                                 </div>
 
 
@@ -71,6 +71,7 @@
         var x = document.getElementById("myInput");
         if (x.type === "password") {
             x.type = "text";
+            
         } else {
             x.type = "password";
         }

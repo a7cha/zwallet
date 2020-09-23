@@ -161,10 +161,11 @@
 }
 
 .search-input{
-    border-radius: 15px; 
     
+    border-radius: 15px; 
     width: 100%;
     padding-bottom: 0.5em;
+    box-sizing: border-box;
 }
 
 .search-input:focus{
@@ -208,6 +209,7 @@
 
 
 .money-input{
+    
     border: none;
     font-family: Nunito Sans;
     font-style: normal;
@@ -222,7 +224,7 @@
     
     color: #6379F4;
     height: 100px;
-    width: 5em;
+    width: 8em;
     font-size:50px;
 }
 
@@ -268,7 +270,6 @@ input[type=email]{
 
 input[type=email]:focus{
     background: url(../components/mail-blue.svg) no-repeat  5px 1px;
-
 }
 
 input[type=password]{
@@ -933,4 +934,65 @@ background: #6379F4;
     
     color: rgba(255, 255, 255, 0.8);
     
+}
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    display: flex;
+    overflow-x: auto;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #444444;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+    background-color: #eeeeee;
+}
+
+
+
+.nav__icon {
+    font-size: 18px;
+}
+
+.navbar-active-res{
+    margin-top: 5px;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    
+    /* identical to box height, or 172% */
+    color: #6379F4;
+}
+
+.navbar-non-res{
+    margin-top: 5px;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    
+    /* identical to box height, or 172% */
+    
+    color: rgba(58, 61, 66, 0.8);
 }
