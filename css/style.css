@@ -1107,6 +1107,20 @@ background: #6379F4;
     color: #3A3D42;
 }
 
+.landing-page-title-blue{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 93px;
+    /* or 155% */
+    
+    
+    /* Zwallet/Dark */
+    
+    color: #6379F4;
+}
+
 .landing-page-par{
     font-family: Nunito Sans;
     font-style: normal;
@@ -1205,6 +1219,17 @@ background: #6379F4;
     color: #3A3D42;
 }
 
+.title-bold-blue{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    /* identical to box height, or 129% */
+    
+    
+    color: #6379F4;
+}
 .paragraph-thin{
     font-family: Nunito Sans;
     font-style: normal;
