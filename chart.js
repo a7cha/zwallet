@@ -142,8 +142,9 @@ Chart.elements.Rectangle.prototype.draw = function () {
         label: "Dataset 1",
         backgroundColor: "#6379F4",
         borderColor: "#fff",
-        data: [9, 3, 5, 7, 4, 8, 6],
+        data: [9, 4, 5, 7, 4, 8, 6],
       },
+      
     ],
   };
 
