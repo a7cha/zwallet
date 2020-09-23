@@ -3,80 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  
-  <style>
-    body {
-    margin: 0 0 55px 0;
-}
+  <title>Zwallet</title>
 
-.nav {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 55px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
-    display: flex;
-    overflow-x: auto;
-}
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
 
-.nav__link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    min-width: 50px;
-    overflow: hidden;
-    white-space: nowrap;
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #444444;
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
-    transition: background-color 0.1s ease-in-out;
-}
+  <!-- Font Bold -->
 
-.nav__link:hover {
-    background-color: #eeeeee;
-}
-
-.nav__link--active {
-    color: #009578;
-}
-
-.nav__icon {
-    font-size: 18px;
-}
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="nav">
-    <a href="#" class="nav__link">
-      <img class="nav__icon" src="components/grid-blue.svg" alt="">
-      <span class="nav__text">Dashboard</span>
-    </a>
-    <a href="#" class="nav__link nav__link--active">
-      <img src="components/arrow-up (1).png" alt="">
-      <span class="nav__text">Transfer</span>
-    </a>
-    <a href="#" class="nav__link">
-      <img src="components/plus-purple.svg" alt="">
-      <span class="nav__text">Top up</span>
-    </a>
-    <a href="#" class="nav__link">
-      <img src="components/user.png" alt="">
-      <span class="nav__text">profile </span>
-    </a>
-    
-    <a href="#" class="nav__link">
-      <img src="components/user.png" alt="">
-      <span class="nav__text">Privacy</span>
-    </a>
+  <div class="container">
+      <div class="row">
 
+        <div class="col-xl-6">
+          <div class="d-flex justify-content-start  my-5">
+              
+              <div class="d-flex flex-column bd-highlight mb-3">
+                <h1 id="zwallet-icon-blue">Zwallet</h1>
+                <div class="mt-auto">
+                  <h1>Awesome App
+                    For Saving Time.</h1>
+                </div>
+                <p>We bring you a mobile app for banking problems that
+                  oftenly wasting much of your times.</p>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6">
+          <div class="d-flex justify-content-end">...
+
+          </div> 
+        </div>
+
+      </div>
   </div>
 
-    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
 </body>
 </html>
