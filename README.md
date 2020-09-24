@@ -16,7 +16,14 @@ Purpose of this project solve banking problems that oftenly wasting much of your
 
 This project built with HTML, CSS, Javacript, Chart.js And Boostrap.
 
+
+
 ### # HOW TO INSTALL
 Download the projects: 
 ```
-~$ git clone https://github.com/a7cha/zwallet
+~$ git clone https://github.com/a7cha/zwallet;
+```
+
+### # LANDING PAGE
+![alt text](https://github.com/a7cha/zwallet/blob/master/Landing-page.png "Logo Title Text 1")
+ 
