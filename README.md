@@ -5,6 +5,10 @@
 </h1>
 
 <p align="center">
+<img src="https://wakatime.com/badge/github/a7cha/zwallet.svg">
+</p>
+
+<p align="center">
  <strong>We bring you a mobile app for banking problems that oftenly wasting much of your times.</strong>
 </p>
 
